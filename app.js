@@ -5,7 +5,7 @@ const $ = (s,el=document)=>el.querySelector(s);
 const esc = s => String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
 const fmt = (n,d=2)=> (isFinite(n)? Number(n).toLocaleString("en-US",{maximumFractionDigits:d,minimumFractionDigits:0}) : "–");
 // URL web app Apps Script (Deploy > Web app). Bukan rahasia: keamanan dicek di server.
-const API_URL = window.LMS_API || "PASTE_URL_WEB_APP_GAS_DI_SINI";
+const API_URL = window.LMS_API || "https://script.google.com/macros/s/AKfycbwMtPvxUCGKa8kwHhuNq-xgWRHgfWKN8Hr0rmkAiZeHey_EoYN4MG8lYp9179z254LMxg/exec";
 const LKEY = "apk-lms-pac1-v2", KKEY = "apk-lms-kode";
 
 // ---------------- state ----------------
